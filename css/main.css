@@ -1,0 +1,168 @@
+body {
+	font: 400 1em/1.5 "Neuton";
+  background: #090d00;
+  color: rgba(255, 255, 255, 0.25);
+  margin: 0;
+}
+
+body,
+input {
+	font: 1em "Open Sans", sans-serif;
+	color: #363639;
+}
+
+a {
+	text-decoration: none;
+	border-bottom: 1px dashed #363639;
+}
+
+/* list */
+.list {
+	background-color: #ffffff;
+	margin: 20px auto;
+	width: 100%;
+	max-width: 650px;
+	padding: 20px;
+	border-radius: 2px;
+	box-shadow: 3px 3px 0 rgba(0, 0, 0, .1);
+	box-sizing: border-box;
+}
+
+.list .header {
+	font-family: "Shadows Into Light Two", cursive;
+	margin: 0 0 10px 0;
+  text-align: center;
+  font: 700 4em/1 "Oswald", sans-serif;
+  letter-spacing: 0;
+  padding: .25em 0 .325em;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+  /* Clip Background Image */
+  background: url(animatedText.png) repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Animate Background Image */
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+  /* Activate hardware acceleration for smoother animations */
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+}
+
+/* Items */
+.items {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.done-button:hover, 
+.undone-button:hover,
+.delete-button:hover {
+	opacity: 1;
+}
+
+.items .item.done {
+	text-decoration:line-through;
+}
+
+.items li, 
+.item-add .input {
+	border: 0;
+	border-bottom: 1px dashed #ccc;
+	padding: 20px 0;
+}
+
+.input {
+	width: 100%;
+}
+
+.input:focus {
+	outline: none;
+}
+
+.done-button, .undone-button{
+	display: inline-block;
+	font-size: 0.8em;
+	background-color: #d9dfe1;
+	color: #363639;
+	padding: 3px 6px;
+	border: 0px;
+	opacity: 0.4;
+	float: right;
+}
+
+.delete-button {
+	display: inline-block;
+	font-size: 0.8em;
+	background-color: #FF1919;
+	color: #363639;
+	padding: 3px 6px;
+	border: 0px;
+	opacity: 0.6;
+	float: right;
+}
+
+.undone-button {
+	margin-left: 20px;
+}
+
+.delete-button {
+	margin-left: 20px;
+}
+
+/* Submit button */
+
+.submit {
+	background-color: #fff;
+	padding: 5px 10px;
+	border: 1px solid #ddd;
+	width: 100%;
+	margin-top: 10px;
+	box-shadow: 3px 3px 0 #ddd;
+}
+
+.submit:active {
+	box-shadow: 0px 0px 0;
+}
+
+.submit:focus {
+	outline-width: 0px;
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(font.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  float: right;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Animate Background Image */
+@-webkit-keyframes aitf {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+ 
