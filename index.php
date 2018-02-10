@@ -5,7 +5,7 @@
 	$itemsQuery = DB::getinstance()->query("
 		SELECT id, name, done
 		FROM items
-	",array(Session::get('user_id')));
+	");
 
 	
 
